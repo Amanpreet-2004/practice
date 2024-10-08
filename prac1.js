@@ -156,3 +156,25 @@ let object={
 for(let x in object){
     console.log(x)
 }
+
+//Object.assign()
+
+let target={a:1};
+let source={b:2, c:3};
+Object.assign(target, source);
+console.log(target);
+
+//Object.freeze()
+const objects={name :"aman"};
+Object.freeze(objects);
+objects.name="preet";
+console.log(objects.name)
+
+//higher order function
+
+let numbers=[1,2,3,4,5]
+let evenNumbers = numbers.filter(function(number){
+return number %2!=0;
+});
+console.log(evenNumbers)
+
