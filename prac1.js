@@ -35,3 +35,29 @@ mp.set(word,mp.get(word)+1);
     }
 })
 console.log("mp",mp)
+
+//array
+
+const persons=["aman","arash","shine","preet","amna"]
+persons.push("vivek")
+persons.pop()
+persons.unshift("anu")
+persons.shift()
+
+console.log(persons)
+
+//make first letter capital of given string
+
+let str="my name is aman";
+let ans=str.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).
+join(' ')
+console.log(ans)
+
+//make second last letter capital of given string
+const str1="this is beautiful flower";
+const ans1=str1.split(' ').map(word=>{
+    const n =word.length;
+    return word.slice(0,n-2)+word.charAt(n-2).toUpperCase()+word.charAt(n-1)
+}).join(' ')
+
+console.log(ans1)
