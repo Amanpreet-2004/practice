@@ -85,3 +85,44 @@ return value;
 }
 console.log(remove(value))
 
+
+//trim()
+let str2=" Amanpreet "
+let trimedstr=str2.trim()
+console.log(trimedstr)
+console.log(str2)
+
+//map,filter,reduce
+
+const val1=[1,2,3,4,5,6,7]
+const doubled=val1.map(val1 => val1*3)
+const oddnum=val1.filter(oddnum=>oddnum%2 != 0)
+const red=val1.reduce((acc,n)=>acc+n,0)
+console.log(doubled)
+console.log(oddnum)
+console.log(red)
+
+//objects
+
+let obj={
+    name:"aman",
+    age:20,
+    city:"chd",
+    dob:"16jan,2004"
+}
+console.log(obj.city,obj.dob)
+
+//spread operator
+
+let num=[1,2,3,4,5]
+let num2=[6,7,8,9]
+let combined=[...num,...num2]
+console.log(combined)
+
+//rest operator
+
+let fruits=["apple","mango","litchi","papaya","grapes"]
+let [first,second, ...rest]=fruits
+console.log(second)
+console.log(first)
+console.log(rest)
