@@ -73,6 +73,7 @@ set.add(4);
 set.delete(2)
 
 console.log(set)
+console.log(set.has(4))
 
 //remove other element
 
