@@ -61,3 +61,27 @@ const ans1=str1.split(' ').map(word=>{
 }).join(' ')
 
 console.log(ans1)
+
+//set
+
+let set = new Set()
+set.add(1);
+set.add(2);
+set.add(2);
+set.add(3);
+set.add(4);
+set.delete(2)
+
+console.log(set)
+
+//remove other element
+
+const value=[1,2,3,4,5,6,7,8,9]
+function remove(value){
+    for( i=1;i<value.length;i++){
+     value.splice(i,1)   
+    }
+return value;
+}
+console.log(remove(value))
+
