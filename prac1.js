@@ -178,3 +178,15 @@ return number %2!=0;
 });
 console.log(evenNumbers)
 
+//closures
+
+function fun(){
+    var a = 20;
+    var b =22;
+return function fun1(){
+    console.log(a);
+    console.log(b);
+}
+
+}
+fun()()
