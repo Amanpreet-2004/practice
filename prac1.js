@@ -127,3 +127,32 @@ let [first,second, ...rest]=fruits
 console.log(second)
 console.log(first)
 console.log(rest)
+
+//destructuring of array
+
+let games=["hockey","cricket","football","kho-kho"]
+let [one,two,three,four]=games
+console.log(two);
+console.log(four)
+
+
+//for...in and for...of in array
+
+let number=[1,2,3,4,5,6,7]
+for(let x of number){
+    console.log(x)
+}
+for(let x in number){
+    console.log(x)
+}
+
+//in object
+
+let object={
+    name:"aman",
+    age:20,
+    city:"chd"
+}
+for(let x in object){
+    console.log(x)
+}
