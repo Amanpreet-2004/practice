@@ -1,0 +1,165 @@
+
+ <script>
+function show()
+{
+    var p=[1,2,3,4,5,6,7];
+    for(i=0;i<7;i++)   //array   work according total length of array
+    {
+        for(j=1;j<=10;j++)   //multipication of array
+        {
+            document.write(p[i]*j+"     &nbsp;   &nbsp;");
+        }
+    
+    document.write("<br>");
+}
+}
+</script>
+<input type=button value="showme" onclick="show()">  
+
+<!-- exp 1  -->
+ <script>
+    function show()
+    {
+    var p = [5,7,9,11,12,6,4];
+    for(i=0;i<7;i++)
+    { 
+       document.write(p[i]+"<br>");
+      }
+    
+    }
+    </script>
+    <input type=button value="showme" onclick="show()">  
+    
+
+ exp2 
+ <script>
+    function show()
+    {
+    var p = [1,2,3,4,5,6,7];
+    for(i=0;i<7;i++)
+    {
+     for(j=1;j<=10;j++)
+       {
+       document.write(p[i]*j+"   &nbsp;  &nbsp;");
+      }
+    document.write("<br>");
+    }
+    }
+    </script>
+    <input type=button value="showme" onclick="show()"> 
+    
+
+     exp3
+      <script>
+        function show() {
+            var a = [3,22,5,8,91,12,10];
+            var b = [15, 11, 39, 31, 42, 7, 24];
+            var c = []
+    
+            for (i = 0; i < 7; i++) {
+                c.push(a.pop());
+            }
+    
+            for (i = 0; i < 7; i++) {
+                c.push(b.pop());
+            }
+            document.write(c.toString());
+            document.write("<br>");
+            document.write(c.sort().toString());
+        }
+    </script>
+    <input type=button value="showme" onclick="show()"> 
+
+
+
+
+
+    exp4 
+       <script language="javascript">
+        function show()
+        {
+        var p = ["red","green","blue","yellow","pink"];
+        for(i=0;i<5;i++)
+        {
+        
+         document.write("<font color="+p[i]+">");
+        document.write("<h1>Hello welcome to arrays</h1>");
+        }
+        
+        }
+        
+        </script>
+        <input type=button value="showme" onclick="show()"> 
+
+      exp5 
+       <script language="javascript">
+            function show()
+            {
+            var p = ["red","green","blue","yellow","pink"];
+            for(i=0;i<5;i++)
+            {
+            
+             var t = parseInt(Math.random()*5);
+             document.write("<font color="+p[t]+">");
+            document.write("<h1>Hello welcome to arrays</h1>");
+            }
+            }
+            
+            </script>
+            <input type=button value="showme" onclick="show()"> 
+            
+       
+
+        exp6 
+        <script language="javascript">
+            var p = ["red", "green", "blue", "yellow", "pink"];
+            var i = 0;
+        
+            function show() {
+                ab.innerHTML = "<h1> " + p[i];
+                i++;
+                if (i > 4)
+                    i = 0;
+                setTimeout("show()", 1000);
+            }
+        </script>
+        <div id="ab">dd </div>
+        <input type=button value="showme" onclick="show()"> 
+
+        exp7 
+       <script language="javascript">
+            var p = ["a1.jpeg","a2.jpeg","a3.jpeg","a4.jpeg","a5.jpeg","a6.jpeg","a7.jpeg"];
+            var i = 0;
+        
+            function show() {
+                document.images[parseInt(Math.random() * 7)].src = p[i];
+                i++;
+                if (i > 6)
+                    i = 0;
+                setTimeout("show()", 500);
+            }
+        </script>
+        <img src="" width=300 height=300>
+        <input type=button value="showme" onclick="show()">
+        
+
+         exp8 
+         <html>
+
+        <body>
+        
+        <script>
+        const numbersOne = [10,20,30];
+        const numbersTwo = [90,60,50];
+        const numbersCombined = [...numbersOne, ...numbersTwo];
+        
+        document.write(numbersCombined);
+        document.write("<br>");
+        document.write(numbersOne);
+        document.write("<br>");
+        document.write([numbersTwo]);
+        
+        </script>
+        
+        </body>
+        </html>  
