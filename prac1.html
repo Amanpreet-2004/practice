@@ -1,0 +1,51 @@
+<script>
+  let a = [];
+  function show() {
+    let img = ["card1.jpg", "card2.jpg", "card3.jpg", "card4.jpg","card5,jpg","card6.jpg","a8.jpeg"];
+    let n = Math.floor(Math.random() * 7);
+    alert(n + 1);
+    document.getElementById("ab").src = img[n];
+    let z = n + 1;
+    document.getElementById("number").innerHTML = "<h3> Card number = " + z;
+    a.push(z);
+    document.getElementById("array").innerHTML = "<h3> array = " + a;
+    let sum = a.reduce((i, n) => i + n, 0);
+    document.getElementById("add").innerHTML =
+      "<h3> Sum of cards Number = " + sum;
+    console.log(sum);
+  }
+
+  
+
+  let b = [];
+  function show1() {
+    let img1 = ["card7.jpg", "card8.jpg", "card8.jpeg","card9.jpeg","card10.jpeg","a5.jpeg","a6.jpeg"];
+    let r = Math.floor(Math.random() * 7);
+    alert(r + 1);
+    document.getElementById("ac").src = img1[r];
+    let y = r + 1;
+    document.getElementById("numbe").innerHTML = "<h3> Card number = " + y;
+    b.push(y);
+    document.getElementById("arra").innerHTML = "<h3> array = " + b;
+    let sum1 = b.reduce((i, n) => i + n, 0);
+    document.getElementById("ad").innerHTML =
+      "<h3> Sum of cards Number = " + sum1;
+    console.log(sum1);
+  }
+</script>
+
+<img style="background-color: black" id="ab" src="" width="200" height="200" />
+<br />
+<div id="number"></div>
+<div id="array"></div>
+<div id="add"></div>
+<button onclick="show()">turn your card</button>
+
+<br><br>
+
+<img style="background-color: black" id="ac" src="" width="200" height="200" />
+<br />
+<div id="numbe"></div>
+<div id="arra"></div>
+<div id="ad"></div>
+<button onclick="show1()">turn your card</button>

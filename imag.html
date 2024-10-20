@@ -2,25 +2,69 @@
  <script>
     var a=["a1.jpeg","a2.jpeg","a3.jpeg","a4.jpeg","a5.jpeg","a6.jpeg","a8.jpeg"]
     var h=[]
-    let sum=0;
+  var sum=0;
 
 function show(){
-let n=parseInt(Math.random()*7);
+let n=parseInt(Math.random()*7); 
  alert(n+1);
 document.images[0].src=a[n]
 ab.innerHTML=[n+1]
  let z= n+1;
-h.push(z)
-
-sum = h.reduce((i, n) => i + n, 0);
- console.log(sum);
+ num.innerHTML="<h1>"+ "Card Number = "+z;
+h.push(z);
+array.innerHTML="<h1>"+ "array = "+h
+    for(i=0;i<a.length;i++){
+        sum=sum+h[i];
+    }
+aman.innerHTML="<h1>"+"sum of cards number = "+sum;
+ sum = h.reduce((i, n) => i + n, 0);
+console.log(sum);
 }
 
 
 
 </script>
-<div id="ab">aa</div>
+<img style="background-color: black;" id ="ab" src="" width=300 height=400>
+<br>
+<div id ="num"></div>
+<div id="array"></div>
+<div id="aman"></div>
+<button onclick="show()">turn your card</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="ab">aa</div>
 <img src=" "  width=300 height=300>
-<input type=button value="showme" onclick="show()"> 
+<input type=button value="showme" onclick="show()">   
+
+
+
+
+<!-- <script>
+function show1(){
+    var m=["red","black","pink","green","orange"];
+    for(i=0;i<5;i++)
+    {
+        document.write("<font color="+m[i]+">");
+            document.write("<h1>Amanpreet Kaur</h1>");
+    }
+}
+
+
+</script>
+<input type=button value="showme" onclick="show1()"> -->
+
+
 
 
